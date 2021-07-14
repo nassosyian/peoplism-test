@@ -1,0 +1,12 @@
+mixin img()
+	- var bg = '{}'
+	- if (attributes.src.indexOf('.jpg') == attributes.src.length-4)	bg = "{backgroundColor: require('"+attributes.src+"?lqip-colors')[0] }"
+	//- - if (attributes.src.indexOf('.jpg') == attributes.src.length-4)	bg = "{background: 'url('+require('"+attributes.src+"?lqip')+') no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }"
+	picture(width!=attributes.width height!=attributes.height style!=attributes.style :style=bg  class!=attributes.class)
+		//- you cannot combine ?webp with ?resize. it just does NOT work
+		//- but you *CAN* use the resize module to convert to WebP
+		source(:srcset="require('"+attributes.src+"?resize&format=webp"+(attributes.extraParams?attributes.extraParams:'')+"').srcSets[0].srcset" sizes!=attributes.sizes type='image/webp')
+		source(:srcset="require('"+attributes.src+"?resize"+(attributes.extraParams?attributes.extraParams:'')+"').srcSets[0].srcset" sizes!=attributes.sizes)
+		//- source(srcset=attributes.src+"?format=webp" type='image/webp')
+		//- 'advanced-image-loader' has issues with file naming
+		img(src=attributes.src alt=attributes.alt)

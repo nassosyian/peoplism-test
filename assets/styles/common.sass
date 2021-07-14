@@ -1,0 +1,908 @@
+
+@import reset
+
+@import rem	
+
+html
+	font-family: $font-primary
+	background: white
+	color: $color-black
+
+.layout
+
+.layout-default
+
+
+.container
+	position: relative
+	width: rem(1440px)
+	padding: rem(0 70px)
+	max-width: 100%
+	margin: auto
+
+.row
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+
+.col
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+
+.spacer
+	flex-grow: 1
+
+.font-cursive
+	display: inline-block
+	position: relative
+	font-family: $font-crusellia
+	font-size: rem(93px)
+	letter-spacing: 0
+	color: inherit
+	z-index: 2
+
+.line-height-123
+	line-height: 123%
+
+
+.page
+	padding-top: rem(50px +16px)
+
+.top-bar
+	display: flex
+	position: fixed
+	left: 0
+	right: 0
+	top: rem(16px)
+	flex-direction: row
+	align-items: center
+	// margin-top: rem(16px)
+	z-index: 50
+
+.company-logo
+	width: rem(150px)
+
+@keyframes rotate360
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
+@keyframes hop
+	0%, 100
+		transform: translateY(0%)
+	50%
+		transform: translateY(-20%)
+
+.company-logo-svg
+	overflow: visible
+
+	.circle
+		transform-origin: 13.6px 14.8px
+
+	.circle, .letter
+		// transform-origin: center center
+		// transition: transform 0.3s ease-in-out
+		animation: 0.3s ease-in-out forwards
+
+	.circle-3
+		animation-delay: 0.2s
+
+	.circle-2
+		animation-delay: 0.1s
+
+	@for $i from 2 through 8
+		.letter-#{$i}
+			animation-delay: #{($i - 1)*0.05}s
+
+	&:hover
+		.circle
+			animation-name: rotate360
+
+		.letter
+			animation-name: hop
+
+.burger
+	display: none
+
+.menu
+	display: flex
+	flex-direction: row
+	align-items: center
+	font-family: $font-secondary
+	font-weight: $weight-book
+	font-size: rem(15px)
+	color: $color-black
+	margin-left: auto
+
+.menu__item
+	font: inherit
+	color: inherit
+	text-decoration: none
+	margin-right: rem(40px)
+
+	&:last-child
+		margin-right: 0
+
+.menu__icon
+	display: block
+	width: rem(26px)
+	height: rem(26px)
+	
+.menu__icon-accessibility
+
+	// &:hover
+	// 	.frame
+	// 		// animation: 5s steps(10, start) 0s infinite alternate forwards
+	// 		// animation: 5s steps(10, start) 0s infinite both
+	// 		// animation: 5s steps(1, start) 0s infinite both
+	// 		animation: 5s steps(10, jump-both) 0s infinite both
+	// 		// animation: 5s step-end 0s 
+
+	// 	.frame-01
+	// 		animation-name: accessiblity-anim-01
+	// 		// z-index: 1
+
+	// 	@for $i from 1 through 8
+	// 		.frame-0#{$i}
+	// 			animation-name: accessiblity-anim-0#{$i}
+	// 			// z-index: #{$i}
+
+.menu__button
+
+
+	
+.button
+	text-decoration: none
+	appearance: none
+	cursor: pointer
+	white-space: nowrap
+
+.button--rounded
+	padding: rem(15px 28px)
+	border: none
+	border-radius: rem(28px)
+	font-family: $font-secondary
+	font-weight: $weight-semibold
+	font-size: rem(15px)
+	letter-spacing: 0
+	
+.button--black
+	background-color: $color-black
+	color: white
+	
+.button--green
+	background-color: $color-dark-green
+	color: white
+	
+.button--blue
+	background-color: $color-faint-purple
+	color: $color-black
+
+
+.section-atf
+	margin-top: rem(219px)
+
+header
+	font-size: rem(60px)
+
+.head-title
+	position: relative
+	font-family: $font-primary
+	font-weight: $weight-thin
+	font-size: rem(60px)
+	// line-height: (73.8/60)
+	line-height: 1
+	letter-spacing: -0.03em
+	color: $color-black
+	width: rem(960px)
+	max-width: calc(100% - 90px)
+
+	.font-cursive
+		margin-left: 0.1em
+
+	.font-cursive + .font-cursive
+		margin-left: 0
+
+.head-subtext
+	font-family: $font-secondary
+	font-size: rem(15px)
+	font-weight: $weight-book
+	letter-spacing: 0
+	line-height: 1.5
+
+	width: rem(230px)
+	max-width: 100%
+
+
+span.head-subtext
+	float: right
+	margin-top: rem(40px)
+	margin-right: rem(-99px)
+	margin-left: -2rem
+
+
+h2.head-subtext
+	display: none
+
+
+.span-inclusive
+	display: none
+	
+.head-button-list
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	margin-top: rem(59.91px)
+
+.head-button-list__item
+	margin-right: rem(20px)
+	margin-bottom: rem(20px)
+
+	&:last-child
+		margin-right: 0
+
+//======================================
+
+.svg-writeon
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	z-index: -1
+
+.diverse-circle-svg
+	transform: translateX(-0.1em) scale(1.05)
+
+.equitable-underline-svg
+	top: initial
+	top: unset
+	bottom: 0
+
+
+.belong-underline-svg
+	top: initial
+	top: unset
+	bottom: -0.4em
+	transform: scale(0.7) translateX(-0.45em)
+
+.curvy-arrow-svg
+	position: absolute
+	width: 2em
+	height: 3em
+	left: unset
+	left: inital
+	right: -2em
+	right: -1.5em
+	top: 0
+	bottom: 0
+	margin: auto
+
+
+//======================================
+
+@keyframes client-scroller-anim
+	0%
+		transform: translateX(0)
+	100%
+		transform: translateX(-50%)
+
+.client-scroller
+	position: relative
+	padding-top: rem(34px)
+	// border-top: 1px solid black
+	overflow: hidden
+	margin-top: rem(79px)
+
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		height: 1px
+		width: 0%
+		background: black
+		transition: width 0.5s ease-in-out
+		z-index: 2
+		pointer-events: none
+
+
+	&:after
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		background: linear-gradient(270deg, white 0%, rgba(196, 196, 196, 0) 11.98%, rgba(196, 196, 196, 0) 90.62%, white 100%)
+
+
+	&.show
+		&:before
+			width: 100%
+
+		.client-scroller__rail
+			opacity: 1
+
+
+.client-scroller__rail
+	width: fit-content
+	transition: opacity 0.8s ease-in-out 0.3s
+	opacity: 0
+
+.client-scroller__wrapper
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+	width: max-content
+	animation: client-scroller-anim 45s linear 0s infinite forwards
+
+.client-scroller__logo
+	margin-right: rem(70px)
+	object-fit: contain
+	object-position: center
+	z-index: 1
+
+
+.section-pies
+	display: flex
+	flex-direction: column
+	position: relative
+	margin-top: rem(121px)
+	margin-bottom: rem(121px)
+	min-height: 300vh
+
+.pie-affix__wrapper
+	display: flex
+	position: relative
+	flex-direction: column
+	flex-grow: 1
+
+
+.pie-affix
+	position: relative
+
+	&.fixed
+		// position: absolute
+		// top: calc(var(--offset))
+		position: fixed
+		top: calc(var(--gap))
+		// left: rem(70px)
+		// right: rem(70px)
+		left: 0
+		right: 0
+		margin: auto
+
+	&.bottom
+		margin-top: auto
+
+.pie-row
+	pointer-events: none
+
+	&.active
+		pointer-events: all
+
+.pie-row-1
+	position: relative
+	z-index: 3
+
+.pie-row-2
+	position: absolute
+	left: 0
+	top: 0
+	right: 0
+	z-index: 2
+
+.pie-before
+	#detached-piece
+		transform-origin: center
+		// transition: transform 0.8s ease-in-out
+
+.attach
+	#detached-piece
+		transform: scale(0.92, 0.85) translate(-12.9%, 8.5%) rotate(6deg)
+		transform-origin: center
+
+.pie-cta
+	display: flex
+	margin-top: rem(44px)
+	// position: absolute
+	// left: 0
+	// bottom: rem(53px + 44px)
+
+.pie-info
+	position: relative
+	justify-content: center
+
+.pie-info-title
+	font-family: $font-primary
+	font-weight: $weight-thin
+	font-size: rem(50px)
+	line-height: (60/50)
+	letter-spacing: -0.03em
+	color: $color-black
+
+.pie-info-content
+	font-family: $font-secondary
+	font-weight: $weight-book
+	font-size: rem(15px)
+	line-height: 1.6
+	letter-spacing: 0%
+	color: $color-black
+	margin-top: rem(24px)
+
+.section-results
+	// display: flex
+	// flex-direction: row
+	position: relative
+	width: 100%
+
+.results__title
+	position: absolute
+	left: 0
+	right: 0
+	top: rem(147px)
+	// width: rem(514px)
+	width: rem(580px)
+	max-width: 100%
+	margin: auto
+	font-family: $font-primary
+	font-weight: $weight-thin
+	font-size: rem(71.29px)
+	line-height: 1
+	color: white
+	text-align: center
+
+	svg
+		bottom: -0.2em
+		top: unset
+		top: initial
+
+.results-segment__wrapper
+	border-right: 1px solid black
+	background-color: $color-dark-green
+	transition: background-color 0.2s ease-in-out
+
+	&:hover
+		background-color: $color-green
+
+	&:last-child
+		border-right: none 
+
+.results-segment
+	display: flex
+	flex-direction: column
+	align-items: center
+	height: 100%
+	height: rem(410px)
+	margin-top: rem(467px)
+	margin-bottom: rem(58px)
+	color: white
+
+.results-segment__title
+	font-family: $font-primary
+	font-size: rem(94.54px)
+	font-weight: $weight-thin
+	letter-spacing: -0.03em
+	color: inherit
+	opacity: 0
+	// transform: translateY(0.3em)
+	transform: translateY(0.6em)
+	transition: opacity 0.5s ease-out
+	transition-property: opacity, transform
+
+	&.show
+		opacity: 1
+		transform: translateY(0)
+
+
+.results-segment__content
+	font-family: $font-secondary
+	font-size: rem(15px)
+	font-weight: $weight-book
+	letter-spacing: 0
+	line-height: 1.5
+	color: inherit
+	text-align: center
+	max-width: 100%
+
+.results-segment__content-1
+	width: rem(240px)
+
+.results-segment__content-2
+	width: rem(320px)
+
+.results-segment__content-3
+	width: rem(256px)
+
+.results-segment__logo
+	display: flex
+	position: relative
+	height: rem(72px)
+	justify-content: center
+	align-items: center
+	opacity: 0
+	transition: opacity 1s ease-in-out
+	transition-delay: 1s
+
+	.bg-image
+		position: absolute
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		margin: auto
+		opacity: 0.3
+		transition: transform 0.8s ease-out
+		transition-property: transform, opacity
+		// transition-delay: 1.5s
+		transition-delay: 1.7s
+		// transition-delay: 2s
+		transform: scale(1)
+		pointer-events: none
+
+	&.show
+		opacity: 1
+
+		.bg-image
+			transform: scale(1.5, 1.8) 
+			opacity: 0
+
+.section-torus
+	position: relative
+	height: rem(773px)
+	padding-top: rem(81px)
+	background-color: $color-faint-yellow
+	border-radius: rem(10px)
+	margin-top: rem(43px)
+	margin-bottom: rem(85px)
+	overflow: hidden
+
+.torus-menu
+	display: flex
+	flex-direction: column
+	position: absolute
+	left: rem(61px)
+	bottom: rem(44px)
+
+
+.torus-menu__item
+	position: relative
+	font-family: $font-secondary
+	font-size: rem(15px)
+	line-height: 1.5
+	color: $color-blackish
+	opacity: 0.3
+	cursor: pointer
+	margin: 0
+	padding: 0
+	list-style: none
+	transition: opacity 0.8s ease-in-out
+	transition-property: opacity, padding-left
+
+	&:before
+		content: ''
+		display: inline-block
+		position: absolute
+		left: 0
+		top: 0.5em
+		// bottom: 0
+		// margin: auto
+		width: 0.6em
+		height: 0.6em
+		background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='5' fill='%231C433A'/%3E%3C/svg%3E");
+		background-repeat: no-repeat
+		background-position: center
+		transition: transform 0.8s ease-in-out
+		transform: scale(0)
+		pointer-events: none
+
+
+.torus-menu__item--active
+	padding-left: 1em
+	opacity: 1
+	outline: none
+	user-select: none
+
+	&:before
+		transform: scale(1)
+
+
+.torus-carousel
+	display: flex
+	flex-direction: row
+	// height: rem(500px) !important
+	height: rem(300px) !important
+	outline: none
+	user-select: none
+
+.torus-carousel__slide
+	display: flex
+	flex-direction: column
+	align-items: center
+	opacity: 0.2
+	transition: opacity 0.8s ease-in-out
+	pointer-events: none
+
+	&.is-current
+		opacity: 1
+		pointer-events: all
+
+
+.torus-carousel__slide-title
+	font-family: $font-primary
+	font-weight: $weight-thin
+	font-size: rem(71.29px)
+	line-height: 1
+	letter-spacing: 0.03em
+
+.torus-carousel__slide-content
+	font-family: $font-secondary
+	font-weight: $weight-book
+	font-size: rem(15px)
+	letter-spacing: 0
+	line-height: 1.5
+	text-align: center
+	margin-top: rem(16px)
+	width: rem(310px)
+	max-width: 100%
+
+.torus-carousel__slide-cta
+	font-family: $font-primary
+	font-weight: $weight-medium
+	font-size: rem(14px)
+	letter-spacing: -0.02em
+	margin-top: rem(30px)
+	padding: rem(8px 20px)
+	// background-color: $color-dark-green
+	background-color: $color-faint-purple
+	// color: white
+	color: $color-black
+	border-radius: rem(48px)
+	appearance: none
+	// margin: 0 30vw
+	white-space: nowrap
+	transition: background-color 1s ease-in-out
+	transition-property: background-color, color
+
+.is-current
+	.torus-carousel__slide-cta
+		background-color: $color-dark-green
+		color: white
+
+
+.torus-graphic
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 0
+	// transform: translateY(50%)
+	transform: translateY(53%)
+	margin: auto
+
+	width: (8/12 * 100%)
+
+.torus-svg
+	// transform: scale(1, 0.94)
+
+.torus-pie-group
+	transform-origin: center
+	transition: transform 1s ease-in-out
+
+.torus-quarter
+	fill: transparent
+	stroke-width: 0.5px
+	transition: fill 1s ease-in-out
+
+	// &.active
+	// 	stroke: transparent !important
+
+.torus-quarter-1.active
+	fill: $color-dark-green
+
+.torus-quarter-2.active
+	fill: $color-faint-purple
+
+.torus-quarter-3.active
+	fill: $color-cyan
+
+.torus-quarter-4.active
+	fill: $color-light-green
+
+.section-questionaire
+	width: 100%
+	// height: (781/1440 * 100vw)
+	height: rem(781px)
+	max-height: 100vh
+	background-color: $color-cyan
+	background-color: #215865
+	background-image: url('/img/questionaire-bg.jpg')
+	background-position: center center
+	background-size: cover
+	margin-bottom: rem(85px)
+	background-blend-mode: luminosity
+	// backdrop-filter: hue-rotate(0deg)
+	// backdrop-filter: grayscale(100%)
+	// transition: backdrop-filter 0.3s ease-in-out
+	transition: background-color 0.8s ease-in-out
+
+.questionaire-bg
+	// position: absolute
+	// left: 0
+	// right: 0
+	// top: 0
+	// bottom: 0
+	// background-color: cyan
+
+.questionaire-wrapper
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+	padding-top: rem(80px)
+	height: 100%
+
+.questionaire-header
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	position: relative
+	width: 100%
+	padding-top: rem(35px)
+	margin-top: rem(85px)
+	border-top: 1px solid black
+
+.questionaire-header__label
+	font-family: $font-mono
+	font-size: rem(14px)
+	letter-spacing: 0.07em
+	text-transform: uppercase
+
+.questionaire-header__label--desktop
+
+.questionaire-header__label--mobile
+	display: none
+
+.questionaire-header__button
+	margin-top: rem(5px)
+
+
+.questionaire-carousel
+	position: relative
+	width: 100%
+
+.questionaire-slide
+	display: flex
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	margin: auto
+	flex-direction: column
+	align-items: center
+	z-index: -100
+	pointer-events: none
+
+.questionaire-slide--active
+	position: relative
+	z-index: 1
+	pointer-events: all
+
+
+.questionaire-slide__content
+	font-family: $font-primary
+	font-weight: $weight-thin
+	font-size: rem(60px)
+	line-height: 1.23
+	letter-spacing: -0.04em
+	color: black
+	text-align: center
+	width: rem(980px)
+	max-width: 100%
+
+.questionaire-slide__choice-list
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	margin-top: rem(57px)
+
+.show ~ .questionaire-slide__choice-list
+	.questionaire-slide__choice
+		opacity: 1
+
+.questionaire-slide__choice
+	display: flex
+	margin-left: rem(10px)
+	margin-right: rem(10px)
+	margin-bottom: rem(10px)
+	transition: opacity 0.3s ease-in-out 0.3s
+	opacity: 0
+
+	@for $i from 1 through 6
+		&:nth-child(#{$i})
+			transition-delay: #{0.2 + 0.05*$i}s
+			// transition-delay: #{0.2 + 0.08*$i}s
+			// transition-delay: #{0.1 + 0.1*$i}s
+
+	// &:last-child
+	// 	margin-right: 0
+
+	input
+		display: none
+
+	label
+		border: 1px solid $color-black
+		color: $color-black
+		transition: color 0.3s ease-in-out
+		transition-property: color, background-color, border-color
+		user-select: none
+
+	label:before
+		content: ''
+		display: inline-block
+		width: rem(17px)
+		height: rem(13px)
+		background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 17 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7.007L5.493 11.5l10-10' stroke='%23fff' stroke-width='1.5'/%3E%3C/svg%3E")
+		transform: scale(0)
+		margin-right: 0em
+		margin-left: rem(-17px)
+		transition: transform 0.3s ease-in-out
+		transition-property: transform, margin-right, margin-left
+
+	input:checked + label
+		color: white
+		background-color: $color-dark-green
+		border-color: $color-dark-green
+
+		&:before
+			margin-left: 0
+			margin-right: 0.5em
+			transform: scale(1)
+
+.questionaire-slide__choice--next
+	
+
+.questionaire-navigation
+	display: flex
+	flex-direction: row
+	align-items: center
+	margin-bottom: rem(40px)
+
+.questionaire-nav__index
+	display: flex
+	justify-content: center
+	align-items: center
+	width: rem(42px)
+	height: rem(42px)
+	// padding: rem(9px 12px)
+	font-family: $font-mono
+	font-size: rem(14px)
+	letter-spacing: 0.07em
+	color: $color-black
+	margin-right: rem(43px-24px)
+	border: 1px solid transparent
+	border-radius: rem(42px)
+	transition: border-color 0.3s ease-in-out
+	transition-property: opacity, border-color
+	appearance: none
+	user-select: none
+	cursor: pointer
+	opacity: 0.3
+
+
+	&:last-child
+		margin-right: 0
+
+.questionaire-nav__index--active
+	border-color: $color-black
+	opacity: 1
+
+
+@import responsive
+
+
+// @import animation

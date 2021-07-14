@@ -1,0 +1,19 @@
+---  # document start
+
+# without a trailing slash
+domain: 'https://peoplism.com'
+# must end with slash '/'
+basePath: '/'
+
+# title: 'Site Title'
+titleTemplate: '%s'
+
+description: 'Put the site desciption here'
+# fully qualified url of image shown in social media
+socialImg: ''
+locale: 'en_US'
+# if any
+themeColor: '#FFF'
+
+'google-gtag': 'UA-XXXXXXXXX-X'
+facebookPixelID: 'FACEBOOK_PIXEL_ID'

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 840 770" style="enable-background:new 0 0 840 770;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.1;}
+	.st1{opacity:0.1;fill:none;stroke:#023541;stroke-width:2.4332;stroke-miterlimit:10;enable-background:new    ;}
+	.st2{opacity:0.9091;fill:none;stroke:#023541;stroke-width:2.4332;stroke-miterlimit:10;enable-background:new    ;}
+	.st3{opacity:0.8182;fill:none;stroke:#023541;stroke-width:2.4332;stroke-miterlimit:10;enable-background:new    ;}
+	.st4{opacity:0.7273;fill:none;stroke:#023541;stroke-width:2.4332;stroke-miterlimit:10;enable-background:new    ;}
+	.st5{opacity:0.6364;fill:none;stroke:#023541;stroke-width:2.4332;stroke-miterlimit:10;enable-background:new    ;}
+	.st6{opacity:0.5455;fill:none;stroke:#023541;stroke-width:2.4332;stroke-miterlimit:10;enable-background:new    ;}
+	.st7{opacity:0.4545;fill:none;stroke:#023541;stroke-width:2.4332;stroke-miterlimit:10;enable-background:new    ;}
+	.st8{opacity:0.3636;fill:none;stroke:#023541;stroke-width:2.4332;stroke-miterlimit:10;enable-background:new    ;}
+	.st9{opacity:0.2727;fill:none;stroke:#023541;stroke-width:2.4332;stroke-miterlimit:10;enable-background:new    ;}
+	.st10{opacity:0.1818;fill:none;stroke:#023541;stroke-width:2.4332;stroke-miterlimit:10;enable-background:new    ;}
+	.st11{opacity:9.090910e-02;fill:none;stroke:#023541;stroke-width:2.4332;stroke-miterlimit:10;enable-background:new    ;}
+</style>
+<g id="bg-circles" class="st0">
+	<path class="st1" d="M393.1,406.5c13.9,0,25.2-9.7,25.2-21.8c0-12-11.3-21.8-25.2-21.8c-13.9,0-25.2,9.7-25.2,21.8
+		C367.8,396.8,379.1,406.5,393.1,406.5z"/>
+	<path class="st2" d="M393.1,439.4c35,0,63.5-24.5,63.5-54.7c0-30.2-28.4-54.7-63.5-54.7s-63.5,24.5-63.5,54.7
+		C329.6,415,358,439.4,393.1,439.4z"/>
+	<path class="st3" d="M393.1,472.5c56.2,0,101.7-39.3,101.7-87.7S449.2,297,393.1,297s-101.7,39.3-101.7,87.7
+		S336.9,472.5,393.1,472.5z"/>
+	<path class="st4" d="M393.1,505.5c77.3,0,139.9-54.1,139.9-120.7S470.4,264,393.1,264s-139.9,54.1-139.9,120.7
+		S315.8,505.5,393.1,505.5z"/>
+	<path class="st5" d="M393.1,538.5c98.4,0,178.3-68.8,178.3-153.8S491.5,231,393.1,231s-178.2,68.8-178.2,153.8
+		S294.6,538.5,393.1,538.5z"/>
+	<path class="st6" d="M393.1,571.4c119.6,0,216.5-83.6,216.5-186.7c0-103.1-96.9-186.7-216.5-186.7c-119.6,0-216.5,83.6-216.5,186.7
+		C176.6,487.9,273.5,571.4,393.1,571.4z"/>
+	<path class="st7" d="M393.1,604.5c140.7,0,254.7-98.4,254.7-219.7c0-121.4-114-219.7-254.7-219.7s-254.7,98.4-254.7,219.7
+		C138.3,506.1,252.4,604.5,393.1,604.5z"/>
+	<path class="st8" d="M393.1,637.5c161.8,0,293-113.2,293-252.7c0-139.6-131.2-252.7-293-252.7S100,245.2,100,384.7
+		C100,524.3,231.2,637.5,393.1,637.5z"/>
+	<path class="st9" d="M393.1,670.5c183,0,331.3-127.9,331.3-285.8C724.3,226.9,576,99,393.1,99S61.8,226.9,61.8,384.7
+		C61.8,542.6,210.1,670.5,393.1,670.5z"/>
+	<path class="st10" d="M393.1,703.4c204.1,0,369.5-142.7,369.5-318.7S597.1,66,393.1,66S23.6,208.7,23.6,384.7
+		S189,703.4,393.1,703.4z"/>
+	<path class="st11" d="M393.1,736.5c225.2,0,407.8-157.5,407.8-351.7S618.3,33,393.1,33S-14.7,190.5-14.7,384.7
+		S167.9,736.5,393.1,736.5z"/>
+</g>
+<image style="overflow:visible;" width="755" height="703" xlink:href="../../img/pie.png"  transform="matrix(0.5 0 0 0.5 205 192)">
+</image>
+</svg>

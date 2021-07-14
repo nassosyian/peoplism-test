@@ -1,0 +1,307 @@
+@media all and (max-width: 1240px)
+
+	.burger-line
+		position: absolute
+		left: 0
+		width: 100%
+		height: 1px
+		background: black
+		transition: color 0.3s ease-in-out
+		transition-property: transform, color
+
+		&:first-child
+			top: 0
+
+		&:last-child
+			bottom: 0
+
+	.burger-wrapper
+		display: flex
+		justify-content: center
+		align-items: center
+		// padding: 2rem
+		width: rem(50px)
+		height: rem(50px)
+		margin-left: auto
+		cursor: pointer
+
+	.burger
+		display: flex
+		flex-direction: column
+		position: relative
+		width: rem(12.5px)
+		height: rem(4px)
+
+		&.open
+			.burger-line
+				&:first-child
+					transform: translateY(1.2px)  rotate(45deg)
+
+				&:last-child
+					transform: translateY(-1.2px) rotate(-45deg)
+
+	.menu__icon-accessibility
+		display: none
+
+	.menu
+		display: none
+
+
+
+// @media all and (max-width: 1410px)
+// @media all and (max-width: 1500px)
+@media all and (max-width: 1200px)
+
+	.container
+		// padding: (0 (70/1200 * 100vw))
+		padding: rem(0 50px)
+
+	.head-title
+		// font-size: 4.26vw
+		// font-size: 4.2vw
+		// font-size: 4vw
+		font-size: 5vw
+		// font-size: 4.7vw
+		max-width: calc(100% - 5vw)
+	
+
+		.font-cursive
+			font-size: (93/60 * 1em)
+
+	span.head-subtext
+		margin-right: rem(-80px)
+
+// @media all and (max-width: 1000px)
+@media all and (max-width: 768px)
+	.head-title
+		font-size: 4.7vw
+
+	.container
+		padding: rem(0 40px)
+
+	span.head-subtext
+		margin-right: rem(-60px)
+
+	.font-cursive
+		font-size: rem(34.24px)
+
+	
+	.results-segment__wrapper
+		border-right: none
+
+	.results__title
+		// display: flex
+		// justify-content: center
+		// align-items: center
+		position: relative
+		top: 0
+		width: 100%
+		height: rem(203px)
+		// padding-top: rem(65px)
+		padding: rem(65px 60px 0 60px)
+		font-family: $font-primary
+		font-size: rem(26px)
+		font-weight: $weight-thin
+		letter-spacing: -0.01em
+		background-color: $color-dark-green
+		border-bottom: 1px solid black
+
+	.results-segment
+		height: auto
+		margin-top: rem(22px)
+		margin-bottom: rem(56px)
+
+	.results-segment__wrapper
+		border-bottom: 1px solid black
+
+		&:last-child
+			border-bottom: none
+
+	.results-segment__title
+		font-size: rem(56.25px)
+		font-weight: $weight-thin
+
+	.results-segment__content
+		font-size: rem(11px)
+		line-height: 1.4
+
+	.results-segment__logo
+		margin-top: rem(38px)
+		height: auto
+
+	.head-subtext, .pie-info-content, .torus-carousel__slide-content
+		font-family: $font-primary
+		font-weight: $weight-light
+		font-size: rem(12px)
+		line-height: 1.5
+		letter-spacing: 0
+
+
+	.section-torus
+		height: 80vw
+		padding: 0
+		margin-top: rem(36px)
+		margin-left: rem(-30px)
+		margin-right: rem(-30px)
+
+	.torus-graphic
+		width: 60%
+
+	.torus-carousel
+		height: 15rem !important
+		// margin-top: rem(81px)
+		margin-top: rem(34px)
+
+	.torus-menu
+		position: relative
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: center
+		left: unset
+		left: initial
+		bottom: unset
+		bottom: initial
+		margin: auto
+		margin-top: rem(24px)
+
+	
+	.torus-menu__item
+		font-family: $font-primary
+		font-weight: $weight-light
+		font-size: rem(15px)
+
+	.torus-menu__item + .torus-menu__item
+		margin-left: 1em
+
+	.torus-carousel__slide-title
+		font-size: rem(40px)
+		font-weight: $weight-thin
+		letter-spacing: -0.02em
+
+	.section-questionaire
+		margin-top: rem(33px)
+
+	.questionaire-header__label--desktop
+		display: none
+
+	.questionaire-header__label--mobile
+		display: block
+
+	.questionaire-header
+		flex-direction: column
+		border-top: none
+		border-bottom: 1px solid black
+		font-family: $font-primary
+		font-weight: $weight-thin
+		font-size: rem(22px)
+		align-items: center
+
+	.questionaire-header__button
+		background: transparent
+		padding: rem(8px 20px)
+		font-family: $font-primary
+		font-size: rem(12px)
+		font-weight: 500
+		letter-spacing: -0.02em
+		color: #212121
+		border: 1px solid currentColor
+		border-radius: rem(48px)
+		margin-bottom: rem(41px)
+		margin-top: rem(23px)
+
+	.questionaire-slide__content
+		font-size: rem(26px)
+		letter-spacing: -0.01em
+		line-height: 1.3
+
+	.questionaire-slide__choice
+		&, & label
+			width: 100%
+			text-align: center
+			justify-content: center
+
+@media all and (max-width: 630px)
+	span.head-subtext
+		display: none
+
+	h2.head-subtext
+		display: block
+		margin-top: rem(25px)
+		width: auto
+
+
+
+@media all and (max-width: 575px)
+
+	.container
+		padding: rem(0 30px)
+
+	.company-logo
+		width: rem(120px)
+
+
+	.head-title
+		font-size: rem(26px)
+
+	.head-subtext
+		margin-top: rem(16px)
+
+	.head-button-list
+		margin-top: rem(25px)
+		flex-wrap: nowrap
+
+	.head-button-list__item
+		margin-right: rem(7px)
+		margin-bottom: 0
+
+	.button--rounded
+		padding: rem(10px 24px)
+		// border-radius: rem(28px)
+		font-family: $font-primary
+		font-weight: $weight-medium
+		font-size: rem(12px)
+		letter-spacing: -0.02em
+
+	.client-scroller
+		margin-top: rem(33px)
+
+	.section-pies
+		max-width: 100vw
+		height: auto
+		min-height: 0
+		margin-top: rem(68px)
+		margin-bottom: 0
+		overflow-x: hidden
+
+	.pie-row
+		pointer-events: all
+
+	.pie-graphic
+		transform: scale(1.5)
+		margin-top: 4rem
+		margin-bottom: 4rem
+
+	.pie-cta
+		margin-top: rem(25px)
+
+	.pie-info-title
+		font-size: rem(26px)
+		letter-spacing: -0.01em
+		line-height: 1.23
+
+	.pie-info-content
+		margin-top: rem(16px)
+
+	.pie-row-2
+		position: relative
+
+	.section-torus
+		height: rem(437px)
+
+	.torus-graphic
+		width: 80%
+	
+	
+	
+
+
