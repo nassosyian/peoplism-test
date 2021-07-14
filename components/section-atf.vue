@@ -59,11 +59,7 @@ export default {
 	mounted()
 	{
 		const delayMsec = 400;
-		// console.log('refs: ', this.$refs)
 
-		// this.$nextTick( () =>
-		// {
-		// 	})
 		setTimeout(() => 
 		{
 			this.$refs.svg1.play();

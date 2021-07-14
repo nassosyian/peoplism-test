@@ -147,61 +147,6 @@ export default {
 
 <style lang="sass" scoped>
 
-// @keyframes accessiblity-anim-01
-// 	0%, 9.5%
-// 		opacity: 1
-// 	10%, 99.5%, 100%
-// 		opacity: 0
-// 		// z-index: -10
-
-// @keyframes accessiblity-anim-02
-// 	10%, 19.5%
-// 		opacity: 1
-
-// 	0%, 9.5%, 20%, 100%
-// 		opacity: 0
-
-// @keyframes accessiblity-anim-03
-// 	20%, 29.5%
-// 		opacity: 1
-
-// 	0%, 19.5%, 30%, 100%
-// 		opacity: 0
-
-// @keyframes accessiblity-anim-04
-// 	30%, 39.5%
-// 		opacity: 1
-
-// 	0%, 29.5%, 40%, 100%
-// 		opacity: 0
-
-// @keyframes accessiblity-anim-05
-// 	40%, 49.5%
-// 		opacity: 1
-
-// 	0%, 39.5%, 50%, 100%
-// 		opacity: 0
-
-// @keyframes accessiblity-anim-06
-// 	50%, 59.5%
-// 		opacity: 1
-
-// 	0%, 49.5%, 60%, 100%
-// 		opacity: 0
-
-// @keyframes accessiblity-anim-07
-// 	60%, 69.5%
-// 		opacity: 1
-
-// 	0%, 59.5%, 70%, 100%
-// 		opacity: 0
-
-// @keyframes accessiblity-anim-08
-// 	70%, 79.5%, 100%
-// 		opacity: 1
-		
-// 	0%, 69.5%
-// 		opacity: 0
 
 svg.accessibility-icon
 	position: relative
@@ -223,30 +168,6 @@ svg.accessibility-icon
 		display: block
 		// visibility: visible
 		// opacity: 1
-
-	// 	fill: green
-
-	// .frame-02
-	// 	fill: red
-
-	// .frame-03
-	// 	fill: blue
-
-	// .frame-04
-	// 	fill: orange
-
-	// .frame-05
-	// 	fill: yellow
-
-	// .frame-06
-	// 	fill: cyan
-
-	// .frame-07
-	// 	fill: grey
-
-	// .frame-08
-	// 	fill: beige
-
 
 
 </style>

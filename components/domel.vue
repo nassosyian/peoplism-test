@@ -17,9 +17,6 @@ export default {
 	{
 		// if (this.content)
 		{
-			// console.log('has content: ', data)
-			// delete data['content'];
-			// return h(props.is, { ...data, domProps: { innerHTML: props.content }, })
 			return h(props.is, { domProps: { innerHTML: props.content }, }, props.content)
 		}
 		// else

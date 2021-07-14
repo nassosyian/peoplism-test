@@ -162,10 +162,6 @@ export default {
 							duration: 0.5,
 							ease: "power2.inOut",
 							stagger: 0.05,
-							// stagger: 
-							// {
-							// 	amount: 0.5
-							// },
 							opacity: 0,
 						})
 				tl.to(`.pie-info-content-${idx} .word`, 
@@ -173,10 +169,6 @@ export default {
 							duration: 0.5,
 							ease: "power2.inOut",
 							stagger: 0.02,
-							// stagger: 
-							// {
-							// 	amount: 0.5
-							// },
 							opacity: 0,
 						}, "-=0.5s")
 				if (index==1)
@@ -185,10 +177,6 @@ export default {
 								duration: 0.5,
 								ease: "power2.inOut",
 								stagger: 0.01,
-								// stagger: 
-								// {
-								// 	amount: 0.5
-								// },
 								opacity: 0,
 							}, "-=0.5s")
 
@@ -222,10 +210,6 @@ export default {
 							duration: 0.5,
 							ease: "power3.inOut",
 							stagger: 0.05,
-							// stagger: 
-							// {
-							// 	amount: 2
-							// },
 							yPercent: 0,
 						})
 				tl.fromTo(`.pie-info-content-${idx} .word`, 
@@ -236,10 +220,6 @@ export default {
 							duration: 0.5,
 							ease: "power2.inOut",
 							stagger: 0.01,
-							// stagger: 
-							// {
-							// 	amount: 2
-							// },
 							opacity: 1,
 						}, "-=0.3s")
 				if (index==1)
@@ -251,10 +231,6 @@ export default {
 								duration: 0.5,
 								ease: "power2.inOut",
 								stagger: 0.02,
-								// stagger: 
-								// {
-								// 	amount: 2
-								// },
 								opacity: 1,
 							}, "-=0.3s")
 
@@ -282,10 +258,7 @@ export default {
 				const topGap = (window.innerHeight - this.affixRect.height)*0.5;
 
 				const totalHeight = box.height - window.innerHeight + topGap;
-				// percent = (offsetY - window.innerHeight) / totalHeight;
-				// percent = (offsetY) / totalHeight;
 				percent = (topGap-box.top) / totalHeight;
-				// console.log(`offsetY[${offsetY}] percent: `, percent);
 
 				if (this.prevScrollY < scrollY && percent > 0.2)
 				{
@@ -377,18 +350,10 @@ export default {
 							t: 1,
 							duration: 2,
 							ease: "power2.out",
-							// onStart()
-							// {
-							// 	console.log('transitionObj onStart')
-							// },
 							onUpdate()
 							{
 								self.setTransitionProgress(transitionObj.t);
 							},
-							// onComplete()
-							// {
-							// 	console.log('transitionObj complete')
-							// },
 						})
 
 			tl.pause();
