@@ -1021,7 +1021,6 @@ const WHITE_PIXEL = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAA
 export default {
 	props:
 	{
-		isFirefox: false,
 		mask: { type: String, default: '' },
 		turbMask: { type: String, default: '' },
 	},
