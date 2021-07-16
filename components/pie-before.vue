@@ -26,7 +26,7 @@
 		<mask id="pie-opacity-mask" mask-type="luminance" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
 			<image ref="img" href="" width="1" height="1"/>
 		</mask>
-		<g ref="g" mask="url(#pie-opacity-mask)" filter="url(#turbFilter)">
+		<g ref="g" mask="url(#pie-opacity-mask)" :filter="isFirefox ? '' : 'url(#turbFilter)'">
 		<g id="bg-circles" style="opacity:0.1;">
 			<path id="circle-1"
 				style="opacity:0.1;fill:none;stroke:#023541;stroke-width:2.4332;stroke-miterlimit:10;enable-background:new    ;"
@@ -1021,6 +1021,7 @@ const WHITE_PIXEL = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAA
 export default {
 	props:
 	{
+		isFirefox: false,
 		mask: { type: String, default: '' },
 		turbMask: { type: String, default: '' },
 	},
@@ -1030,6 +1031,15 @@ export default {
 		mask(newVal)
 		{
 			setTimeout(() => this.onResize(), 0);
+		},
+	},
+
+	computed:
+	{
+		isFirefox()
+		{
+			if (!process.browser)	return false;
+			return navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 		},
 	},
 

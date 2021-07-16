@@ -24,7 +24,7 @@
 		<mask id="pie2-opacity-mask" mask-type="luminance" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
 			<image ref="img" href="" width="1" height="1"/>
 		</mask>
-	 <g ref="g" mask="url(#pie2-opacity-mask)" filter="url(#turbFilter2)">
+	 <g ref="g" mask="url(#pie2-opacity-mask)" :filter="isFirefox ? '' : 'url(#turbFilter)'">
 		<g id="bg-circles" style="opacity:0.1;">
 			<path style="opacity:0.1;fill:none;stroke:#023541;stroke-width:2.4332;stroke-miterlimit:10;enable-background:new    ;" d="M409,374.7c13.9,0,25.2-9.7,25.2-21.8c0-12-11.3-21.8-25.2-21.8c-13.9,0-25.2,9.7-25.2,21.8C383.7,365,395,374.7,409,374.7z"/>
 			<path style="opacity:0.9091;fill:none;stroke:#023541;stroke-width:2.4332;stroke-miterlimit:10;enable-background:new    ;" d="M409,407.6c35,0,63.5-24.5,63.5-54.7c0-30.2-28.4-54.7-63.5-54.7s-63.5,24.5-63.5,54.7C345.5,383.2,373.9,407.6,409,407.6z"/>
@@ -68,6 +68,15 @@ export default {
 		mask(newVal)
 		{
 			setTimeout(() => this.onResize(), 0);
+		},
+	},
+
+	computed:
+	{
+		isFirefox()
+		{
+			if (!process.browser)	return false;
+			return navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 		},
 	},
 
