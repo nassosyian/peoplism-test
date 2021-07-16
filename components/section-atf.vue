@@ -99,6 +99,13 @@ export default {
 					opacity: 1,
 				});
 
+		gsap.to('.burger-wrapper', 
+		{
+			opacity: 1,
+			delay: 2*(delayMsec/1000) + 1.8,
+			duration: 1,
+		})
+
 		let delay = tween.duration() * 1.7 * 1000;
 		setTimeout(() =>
 		{

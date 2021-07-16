@@ -3,7 +3,7 @@
 		<a class="company-logo" href="#" style="opacity: 0">
 			<company-logo/>
 		</a>
-		<div class="burger-wrapper" @click="burgerOpen = !burgerOpen" >
+		<div class="burger-wrapper" style="opacity: 0" @click="burgerOpen = !burgerOpen" >
 			<div class="burger" :class="{open: burgerOpen}">
 				<span class="burger-line"></span>
 				<span class="burger-line"></span>
