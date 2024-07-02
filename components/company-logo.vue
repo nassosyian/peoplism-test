@@ -1,5 +1,5 @@
 <template>
-	<svg class="company-logo-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 29" style="enable-background:new 0 0 150 29;" xml:space="preserve" role="img">
+	<svg class="company-logo-svg logo-image" aria-label="Peoplism logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 29" style="enable-background:new 0 0 150 29;" xml:space="preserve" role="img">
 		<path id="circle-1" class="circle circle-1"
 			d="M18.5,14.7c0-2.6-2.1-4.7-4.7-4.7c-2.6,0-4.7,2.1-4.7,4.7c0,2.6,2.1,4.7,4.7,4.7
 		C16.4,19.5,18.5,17.4,18.5,14.7z M11,14.7c0-1.5,1.2-2.8,2.8-2.8s2.8,1.2,2.8,2.8c0,1.6-1.2,2.8-2.8,2.8S11,16.3,11,14.7z" />

@@ -22,7 +22,7 @@ const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 
 export default {
-	mode: 'universal',
+	// mode: 'universal',
 	target: 'static',
 
 	env: {

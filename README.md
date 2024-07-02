@@ -1,5 +1,7 @@
 ## Build Setup
 
+* requires Node v16
+
 ``` bash
 # install dependencies
 $ yarn install
